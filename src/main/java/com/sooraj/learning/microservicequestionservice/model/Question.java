@@ -1,4 +1,4 @@
-package com.sooraj.learning.microservicequizapp.model;
+package com.sooraj.learning.microservicequestionservice.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

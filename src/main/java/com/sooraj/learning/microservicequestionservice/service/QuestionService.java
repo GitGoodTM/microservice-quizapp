@@ -1,9 +1,9 @@
-package com.sooraj.learning.microservicequizapp.service;
+package com.sooraj.learning.microservicequestionservice.service;
 
-import com.sooraj.learning.microservicequizapp.dao.QuestionDao;
-import com.sooraj.learning.microservicequizapp.model.Question;
-import com.sooraj.learning.microservicequizapp.model.QuestionResponse;
-import com.sooraj.learning.microservicequizapp.model.QuestionWrapper;
+import com.sooraj.learning.microservicequestionservice.dao.QuestionDao;
+import com.sooraj.learning.microservicequestionservice.model.Question;
+import com.sooraj.learning.microservicequestionservice.model.QuestionResponse;
+import com.sooraj.learning.microservicequestionservice.model.QuestionWrapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -66,6 +66,7 @@ public class QuestionService {
             wrapper.setOption2(question.getOption2());
             wrapper.setOption3(question.getOption3());
             wrapper.setOption4(question.getOption4());
+            wrappers.add(wrapper);
         }
         return new ResponseEntity<>(wrappers, HttpStatus.OK);
     }
@@ -74,6 +75,8 @@ public class QuestionService {
     public ResponseEntity<Integer> getScore(List<QuestionResponse> responses) {
         int correctAnswerCount = 0;
         for(QuestionResponse response : responses){
+            System.out.println("Question ID: " + response.getQuestionId());
+            System.out.println("Response: " + response.getResponse());
             Question question = questionDao.findById(response.getQuestionId()).get();
             if(response.getResponse().equals(question.getRightAnswer()))
                 correctAnswerCount++;

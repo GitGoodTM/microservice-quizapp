@@ -1,13 +1,13 @@
-package com.sooraj.learning.microservicequizapp;
+package com.sooraj.learning.microservicequestionservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MicroserviceQuizappApplication {
+public class MicroserviceQuestionServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(MicroserviceQuizappApplication.class, args);
+        SpringApplication.run(MicroserviceQuestionServiceApplication.class, args);
     }
 
 }

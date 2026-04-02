@@ -1,6 +1,6 @@
-package com.sooraj.learning.microservicequizapp.dao;
+package com.sooraj.learning.microservicequestionservice.dao;
 
-import com.sooraj.learning.microservicequizapp.model.Question;
+import com.sooraj.learning.microservicequestionservice.model.Question;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

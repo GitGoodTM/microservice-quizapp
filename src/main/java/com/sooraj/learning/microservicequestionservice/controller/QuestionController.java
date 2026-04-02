@@ -1,9 +1,9 @@
-package com.sooraj.learning.microservicequizapp.controller;
+package com.sooraj.learning.microservicequestionservice.controller;
 
-import com.sooraj.learning.microservicequizapp.model.Question;
-import com.sooraj.learning.microservicequizapp.model.QuestionResponse;
-import com.sooraj.learning.microservicequizapp.model.QuestionWrapper;
-import com.sooraj.learning.microservicequizapp.service.QuestionService;
+import com.sooraj.learning.microservicequestionservice.model.Question;
+import com.sooraj.learning.microservicequestionservice.model.QuestionResponse;
+import com.sooraj.learning.microservicequestionservice.model.QuestionWrapper;
+import com.sooraj.learning.microservicequestionservice.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
