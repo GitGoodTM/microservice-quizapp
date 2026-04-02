@@ -2,4 +2,4 @@ This repository is to record my learnings on Microservices, I am following Telus
 
 YouTube Playlist link: https://www.youtube.com/watch?v=3WqDbU_Xnu4&list=PLsyeobzWxl7rRyGcqgZ3MP5pWGPwUvprI
 
-Currently I'm at 16th video
+Currently I'm at 23rd video
